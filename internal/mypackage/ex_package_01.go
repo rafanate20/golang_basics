@@ -1,6 +1,9 @@
 package mypackage
 
-import "math/rand"
+import (
+	"fmt"
+	"math/rand"
+)
 
 type VehiclePublic struct { //Begin Uppercase is Public
 	Brand   string
@@ -18,12 +21,17 @@ type contractPrivate struct { //Begin lowercase is private
 func setContract() int {
 	var nContract contractPrivate
 	nContract.id = rand.Intn(99999)
-	nContract.vendor = "Juan"
+	nContract.vendor = func(n string) string { // using an anonymous function just for fun
+		return n
+	}("Juan")
+	fmt.Printf("the vendor %s set a contract number %d", nContract.vendor, nContract.id)
+
 	return nContract.id
 }
 
 // GenerateStockid is a public func
 func GenerateStockid(car VehiclePublic) VehiclePublic {
 	car.stockid = setContract()
+
 	return car
 }

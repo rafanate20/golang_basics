@@ -83,6 +83,12 @@ Sobre el path del proyecto Ejecutamos
 $ go mod tidy
 ```
 
+## 13.- Check all external packages downloaded (go get cache)
+Sobre el path del proyecto Ejecutamos
+```bash
+$ go mod download -json
+```
+
 ## LISTADO DE ENLACES DE INTERES
 #### Go Tour: https://tour.golang.org
 #### Cheat Sheet -> https://devhints.io/go

@@ -29,6 +29,15 @@ func UsingConcurrentGorutines() {
 		fmt.Println(text)
 	}("Adios\n----------------------------------------------------------------")
 
+	c := make(chan int) // Another anonymous function commonly used with go routines
+	go func() {
+		fmt.Println("Starting function")
+		time.Sleep(2 * time.Second)
+		fmt.Println("Finishing anonymous function")
+		c <- 1
+	}()
+	fmt.Println(<-c)
+
 	time.Sleep(time.Second * 1) // ! Funcion para que cuando llegue a esta linea espere el tiempo indicado (lo suficiente para que la Gorutine ejecute su funcion de forma concurrente)
 
 	// Nota: Para fines practicos se hace uso de la funcion Sleep(), pero en realidad NO es una buena practica, es mejor utilizar los WaitGroups
