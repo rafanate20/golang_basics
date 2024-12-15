@@ -2,7 +2,7 @@
 
 Firstable clone the repository from github.
 
-## To Run directly on a Docker container exec this:
+## From Docker: to run directly on a Docker container exec follow this steps:
 
 ```
 # make docker-build
@@ -13,7 +13,7 @@ To see output, check container logs.
 For more commads check the makefile and /docs.
 
 
-## To Run locally (needs a GoLang installation):
+## From local: To Run locally (needs a GoLang installation):
 
 If you want to run this project without docker:
 1. Install latest Golang version from here.
