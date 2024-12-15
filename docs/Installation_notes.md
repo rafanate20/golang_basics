@@ -13,13 +13,13 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:$GOBIN:$GOROOT/bin
 ```
 
-## 3.- Compilar con 
+## 3.- Compilar con
 
 ```bash
 $ go build
 ```
 
-## 4.- Correr temporalmente con 
+## 4.- Correr temporalmente con
 
 ```bash
 $ go run
@@ -51,59 +51,59 @@ $ go get -v -u github.com/labstack/echo/v4
 ```
 
 ## 8.- Verificar estado de los modulos instalados
-Revisamos que todos los modulos y sus dependencias se referencien en el go.mod del proyecto
+Revisamos que todos los modulos y sus dependencias se referencien en el go.mod del proyecto.
 ```bash
 #Ejecutamos en la raiz del proyecto el comando 
 $ go mod verify
 ```
 
 ## 9.- Modificar un modulo desde el repositorio origen
-Clonamos el repositorio del modulo en nuestro path_proyecto/src
-Luego hacemos las modificaciones del codigo
-Redireccionamos la nueva version con el comando
+Clonamos el repositorio del modulo en nuestro path_proyecto/src,
+luego hacemos las modificaciones del codigo
+Redireccionamos la nueva version con el comando.
 ```bash
 $ go mod edit -replace github/labstack/examplepkg=./src/mynewpkg
 ```
 
 ## 10.- Volver a la version original del modulo
-Usamos el comando
+Usamos el comando.
 ```bash
 $ go mod edit -dropreplace github/labstack/examplepkg
 ```
 
 ## 11.- Empaquetar todo el codigo de librerias de terceros en el proyecto
-Sobre el path del proyecto Ejecutamos
+Sobre el path del proyecto Ejecutamos.
 ```bash
 $ go mod vendor
 ```
 
 ## 12.- Limpiar modulos y libs en deshuso
-Sobre el path del proyecto Ejecutamos
+Sobre el path del proyecto Ejecutamos.
 ```bash
 $ go mod tidy
 ```
 
 ## 13.- Check all external packages downloaded (go get cache)
-Sobre el path del proyecto Ejecutamos
+Sobre el path del proyecto Ejecutamos.
 ```bash
 $ go mod download -json
 ```
 
 ## LISTADO DE ENLACES DE INTERES
-#### Go Tour: https://tour.golang.org
-#### Cheat Sheet -> https://devhints.io/go
-#### Webs con listados de paquetes y librerias de GO -> http://awesome-go.com/
-#### Golang Weekly: https://golangweekly.com
-#### Play With Go: https://play-with-go.dev
-#### Go by example: https://gobyexample.com
-#### Go Time (en Spotify)
-#### Canal de slack de Gophers -> gophers.slack.com
+#### Go Tour: https://tour.golang.org.
+#### Cheat Sheet -> https://devhints.io/go.
+#### Webs con listados de paquetes y librerias de GO -> http://awesome-go.com/.
+#### Golang Weekly: https://golangweekly.com.
+#### Play With Go: https://play-with-go.dev.
+#### Go by example: https://gobyexample.com.
+#### Go Time (en Spotify).
+#### Canal de slack de Gophers -> gophers.slack.com.
 
 ## Extra
 
 ## Instalar VSCode desde Software Manager (flatpak version)
 
-### Configurar vscode con los pasos descritos en
+### Configurar vscode con los pasos descritos en:
 
 [Install visualstudio.code](https://github.com/flathub/com.visualstudio.code#readme)
 
