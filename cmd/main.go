@@ -27,6 +27,7 @@ func main() {
 	12.- GoRutines (concurrency)
 	13.- Channels (concurrency)
 	14.- WebServer (Using Echo Framework)
+	15.- WebServer (stdlib)
 	.........................................
 	INSERT an option number:
 	`)
