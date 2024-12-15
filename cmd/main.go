@@ -28,7 +28,7 @@ func main() {
 	13.- Channels (concurrency)
 	14.- WebServer (Using Echo Framework)
 	.........................................
-	INSERT the selected option:
+	INSERT an option number:
 	`)
 	//scanner to read console input
 	scanVar := bufio.NewScanner(os.Stdin)
